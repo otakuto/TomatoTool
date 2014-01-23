@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{3FA07A96-75FD-4548-A22B-AB92885D5FE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>TomatoTool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Users\otakuto\Desktop\t\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TomatoTool</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2CC72ADE04E666631E3C0C5F0A79564A2E9F9CFB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TomatoTool_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionDirection.cs" />
+    <Compile Include="Form\FormTomatoTool\Gimmick\Gimmick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\Map\Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\Monster\Monster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphic\OAM\OAMSize.cs" />
+    <Compile Include="Form\CharacterImageEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CharacterImageEditor.Designer.cs">
+      <DependentUpon>CharacterImageEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormMapEditor\FormMapEditorAnimationTile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMapEditor\FormMapEditorBattleBackGround.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMapEditor\FormMapEditorCharacterImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMapEditor\FormMapEditorCharacterScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMapEditor\FormMapEditorChipSetList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMapEditor\FormMapEditorChipSetRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMapEditor\FormMapEditorMapArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMapEditor\FormMapEditorMapPalette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMapEditor\FormMapEditorMapScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMapEditor\FormMapEditorWarpScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormSaveProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormSaveProgress.Designer.cs">
+      <DependentUpon>FormSaveProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\Map\AnimationTileSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\Map\BattleBackGround.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\Map\CharacterImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\Map\CharacterScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\Map\ChipSetList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\Map\ChipSetTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\Map\MapArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\Map\MapPalette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\Map\MapScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\Map\WarpScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gimmick\GimmickList.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Graphic\Tile\AnimationTile\AnimationTileSetList.cs" />
+    <Compile Include="Graphic\Tile\AnimationTile\AnimationTileSet.cs" />
+    <Compile Include="Map\BattleBackground\BattleBackgroundList.cs" />
+    <Compile Include="Character\CharacterScriptDirection.cs" />
+    <Compile Include="Graphic\Action\Action.cs" />
+    <Compile Include="Graphic\Action\ActionList.cs" />
+    <Compile Include="Graphic\OAM\OAM.cs" />
+    <Compile Include="Graphic\OAM\OAMSet.cs" />
+    <Compile Include="Graphic\OAM\OAMSetList.cs" />
+    <Compile Include="Character\CharacterImage.cs" />
+    <Compile Include="Character\CharacterScript.cs" />
+    <Compile Include="Character\CharacterScriptList.cs" />
+    <Compile Include="Clothes.cs" />
+    <Compile Include="Form\LZ77Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\LZ77Editor.Designer.cs">
+      <DependentUpon>LZ77Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\WindowStringEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\WindowStringEditor.Designer.cs">
+      <DependentUpon>WindowStringEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\BattleBackground\BattleBackground.cs" />
+    <Compile Include="Graphic\Chip\Chip.cs" />
+    <Compile Include="Graphic\Chip\ChipSet.cs" />
+    <Compile Include="Graphic\Chip\ChipSetList.cs" />
+    <Compile Include="Map\ChipSetTable.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="Form\FormTomatoTool\FormTomatoTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormTomatoTool\FormTomatoTool.Designer.cs">
+      <DependentUpon>FormTomatoTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gimmick\Gimmick.cs" />
+    <Compile Include="Graphic\Tile\AnimationTile\AnimationTile.cs" />
+    <Compile Include="Graphic\Palette\TransitionPalette.cs" />
+    <Compile Include="Graphic\Palette\Color16Bit.cs" />
+    <Compile Include="Graphic\Tile\LZ77.cs" />
+    <Compile Include="Graphic\Palette\Palette.cs" />
+    <Compile Include="Graphic\Tile\Tile.cs" />
+    <Compile Include="Graphic\Tile\Tile4Bit.cs" />
+    <Compile Include="Graphic\Tile\Tile4BitList.cs" />
+    <Compile Include="Graphic\Tile\Tile8Bit.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Form\FormMapEditor\FormMapEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMapEditor\FormMapEditor.Designer.cs">
+      <DependentUpon>FormMapEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\MapArea\MapAreaList.cs" />
+    <Compile Include="Map\MapArea\MapAreaRangeCopy.cs" />
+    <Compile Include="Map\MapList.cs" />
+    <Compile Include="Map\MapTile.cs" />
+    <Compile Include="MapObject.cs" />
+    <Compile Include="MapRangeObject.cs" />
+    <Compile Include="Map\Map.cs" />
+    <Compile Include="Map\MapArea\MapArea.cs" />
+    <Compile Include="Map\MapScript\MapScript.cs" />
+    <Compile Include="Map\MapScript\MapScriptList.cs" />
+    <Compile Include="Map\WarpScript\WarpScriptMotion.cs" />
+    <Compile Include="Monster\Monster.cs" />
+    <Compile Include="Map\OverrideTile.cs" />
+    <Compile Include="Form\PaletteEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PaletteEditor.Designer.cs">
+      <DependentUpon>PaletteEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="ROM.cs" />
+    <Compile Include="Script.cs" />
+    <Compile Include="Form\ScriptEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ScriptEditor.Designer.cs">
+      <DependentUpon>ScriptEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Font\Font.cs" />
+    <Compile Include="Font\Status\StatusFont.cs" />
+    <Compile Include="Font\Status\StatusFontList.cs" />
+    <Compile Include="Font\Window\WindowFontList.cs" />
+    <Compile Include="Font\Window\WindowChineseCharacterFont.cs" />
+    <Compile Include="Form\StringEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\StringEditor.Designer.cs">
+      <DependentUpon>StringEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="String\StatusString.cs" />
+    <Compile Include="Monster\Technical.cs" />
+    <Compile Include="String\StatusStringSet.cs" />
+    <Compile Include="TomatoAdventure.cs" />
+    <Compile Include="ROMObject.cs" />
+    <Compile Include="Map\WarpScript\WarpScript.cs" />
+    <Compile Include="Map\WarpScript\WarpScriptList.cs" />
+    <Compile Include="String\WindowString.cs" />
+    <Compile Include="Font\Window\WindowFont.cs" />
+    <Compile Include="VirtualROMObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\CharacterImageEditor.resx">
+      <DependentUpon>CharacterImageEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormSaveProgress.resx">
+      <DependentUpon>FormSaveProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormTomatoTool\FormTomatoTool.resx">
+      <DependentUpon>FormTomatoTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\LZ77Editor.resx">
+      <DependentUpon>LZ77Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormMapEditor\FormMapEditor.resx">
+      <DependentUpon>FormMapEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\PaletteEditor.resx">
+      <DependentUpon>PaletteEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\WindowStringEditor.resx">
+      <DependentUpon>WindowStringEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ScriptEditor.resx">
+      <DependentUpon>ScriptEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\StringEditor.resx">
+      <DependentUpon>StringEditor.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IList.txt" />
+    <EmbeddedResource Include="Resources\MapArea\01.png" />
+    <EmbeddedResource Include="Resources\MapArea\02.png" />
+    <EmbeddedResource Include="Resources\MapArea\2A.png" />
+    <EmbeddedResource Include="Resources\MapArea\3A.png" />
+    <EmbeddedResource Include="Resources\MapArea\04.png" />
+    <EmbeddedResource Include="Resources\MapArea\4A.png" />
+    <EmbeddedResource Include="Resources\MapArea\4C.png" />
+    <EmbeddedResource Include="Resources\MapArea\4E.png" />
+    <EmbeddedResource Include="Resources\MapArea\5A.png" />
+    <EmbeddedResource Include="Resources\MapArea\5C.png" />
+    <EmbeddedResource Include="Resources\MapArea\5E.png" />
+    <EmbeddedResource Include="Resources\MapArea\08.png" />
+    <EmbeddedResource Include="Resources\MapArea\10.png" />
+    <EmbeddedResource Include="Resources\MapArea\11.png" />
+    <EmbeddedResource Include="Resources\MapArea\18.png" />
+    <EmbeddedResource Include="Resources\MapArea\20.png" />
+    <EmbeddedResource Include="Resources\MapArea\22.png" />
+    <EmbeddedResource Include="Resources\MapArea\28.png" />
+    <EmbeddedResource Include="Resources\MapArea\30.png" />
+    <EmbeddedResource Include="Resources\MapArea\32.png" />
+    <EmbeddedResource Include="Resources\MapArea\38.png" />
+    <EmbeddedResource Include="Resources\MapArea\40.png" />
+    <EmbeddedResource Include="Resources\MapArea\42.png" />
+    <EmbeddedResource Include="Resources\MapArea\44.png" />
+    <EmbeddedResource Include="Resources\MapArea\46.png" />
+    <EmbeddedResource Include="Resources\MapArea\48.png" />
+    <EmbeddedResource Include="Resources\MapArea\50.png" />
+    <EmbeddedResource Include="Resources\MapArea\52.png" />
+    <EmbeddedResource Include="Resources\MapArea\54.png" />
+    <EmbeddedResource Include="Resources\MapArea\56.png" />
+    <EmbeddedResource Include="Resources\MapArea\58.png" />
+    <EmbeddedResource Include="Resources\MapArea\60.png" />
+    <EmbeddedResource Include="Resources\MapArea\62.png" />
+    <EmbeddedResource Include="Resources\MapArea\64.png" />
+    <EmbeddedResource Include="Resources\MapArea\66.png" />
+    <EmbeddedResource Include="Resources\MapArea\70.png" />
+    <EmbeddedResource Include="Resources\MapArea\74.png" />
+    <EmbeddedResource Include="Resources\MapArea\00.png" />
+    <Content Include="Resources\SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
